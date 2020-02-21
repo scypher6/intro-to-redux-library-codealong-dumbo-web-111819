@@ -18,6 +18,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
+	
 	return {
 		items: state.items
 	};
@@ -28,6 +29,8 @@ const mapDispatchToProps = dispatch => {
 		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
 	};
 };
+
+
 
 export default connect(
 	mapStateToProps,
